@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Bannar from './components/Bannar';
+import BookMark from './components/BookMark';
+import CardList from './components/cardList';
+import HeadingText from './components/headingText';
+import Navbar from './components/navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mx-auto">
+      here
+      <Navbar/>
+      <Bannar/>
+      <HeadingText/>
+    <div className='border-4 border-red-500 flex gap-4'>
+      <CardList className='border-2 border-green-600'/>
+      <BookMark/>
+    </div>
     </div>
   );
 }
