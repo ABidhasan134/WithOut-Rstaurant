@@ -17,11 +17,11 @@ const CardList = ({heandleClick}) => {
 
    
   return (
-    <div className="grid grid-cols-2 w-[70%]">
+    <div className="grid md:grid-cols-2 grid-cols-1 sm:w-[70%] w-full">
       {
         data.map((items)=>{
 
-          return   <div className="card card-compact w-96 bg-base-100 shadow-xl p-4 m-4 border-2 border-gray-400">
+          return   <div className="card card-compact sm:w-96 w-auto bg-base-100 shadow-xl p-4 m-4 border-2 border-gray-400">
           <figure>
             <img
               src={items.recipe_image}

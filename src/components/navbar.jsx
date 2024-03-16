@@ -5,26 +5,28 @@ import { FaRegUserCircle } from "react-icons/fa";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-base-100">
-        <div className="navbar-start">
-          <h1 className="text-2xl font-semibold">WithOut</h1>
+      <div className="navbar sm:flex grid justify-center ">
+        <div className="navbar-start sm:flex-1 w-auto justify-center sm:justify-start ">
+          <h1 className="sm:text-2xl text-3xl font-semibold">WithOut</h1>
         </div>
+        {/* testing navbar */}
+        <div className=" flex sm:gap-96 gap-24">
         <div className="navbar-center">
-          <a className="font-semibold p-4 hover:bg-green-300 rounded-md">
+          <a className="font-semibold p-1 sm:-4 hover:bg-green-300 rounded-md">
             Home
           </a>
-          <a className="font-semibold p-4 hover:bg-green-300 rounded-md">
+          <a className="font-semibold p-1 sm:p-4 hover:bg-green-300 rounded-md">
             Recipis
           </a>
-          <a className="font-semibold p-4 hover:bg-green-300 rounded-md">
+          <a className="font-semibold p-1 sm:p-4 hover:bg-green-300 rounded-md">
             About
           </a>
-          <a className="font-semibold p-4 hover:bg-green-300 rounded-md">
+          <a className="font-semibold p-1 sm:p-4 hover:bg-green-300 rounded-md">
             Search
           </a>
         </div>
-        <div className="navbar-end">
-          <label className="input input-bordered flex items-center gap-2">
+        <div className="navbar-end flex">
+          <label className="input input-bordered sm:flex items-center gap-2  hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -42,6 +44,7 @@ const Navbar = () => {
           <button className="btn btn-ghost btn-circle text-4xl hover:bg-green-300">
             <FaRegUserCircle />
           </button>
+        </div>
         </div>
       </div>
     </>

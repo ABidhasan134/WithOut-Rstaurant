@@ -37,7 +37,7 @@ function App() {
       <Navbar />
       <Bannar />
       <HeadingText />
-      <div className='flex gap-4 mt-10'>
+      <div className='sm:flex  w-full  sm:gap-4 sm:mt-10'>
         <CardList heandleClick={heandleClick} className='border-2 border-green-600' />
         {/* Pass preperd as preperdItems */}
         <BookMark resipis={resipis} handelremove={handelremove} preperdItems={preperd} />
