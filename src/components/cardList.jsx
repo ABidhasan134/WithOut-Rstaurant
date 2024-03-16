@@ -24,7 +24,7 @@ const CardList = ({heandleClick}) => {
           return   <div className="card card-compact w-96 bg-base-100 shadow-xl p-4 m-4 border-2 border-gray-400">
           <figure>
             <img
-              src={items.recipe_name}
+              src={items.recipe_image}
               alt="Food image"
             />
           </figure>
@@ -53,7 +53,7 @@ const CardList = ({heandleClick}) => {
           </div>
   
           <div>
-            <button onClick={()=>heandleClick(items)} className="btn bg-green-400 hover:bg-green-800 hover:text-white">Want to cook</button>
+            <button onClick={()=>heandleClick(items,items.recipe_id)} className="btn bg-green-400 hover:bg-green-800 hover:text-white">Want to cook</button>
           </div>
         </div>
         })

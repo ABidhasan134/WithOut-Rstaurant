@@ -1,28 +1,26 @@
 import React from 'react'
 
-const Resipimarks = () => {
+const Resipimarks = ({handelremove,recipe,indx}) => {
   return (
-    <div>
-      <div className="w-[50%] h-auto justify-center  text-center border-2 border-green-500">
-      <h1>Want to cook: {}</h1>
-      <div className="line-hr w-full"></div>
-      <div className="flex border-2 border-purple-500 justify-center gap-28">
-        <p>Name</p>
-        <p>Time</p>
-        <p>Carlos</p>
-      </div>
-      <div className="flex border-2 border-purple-500  justify-center ">
-        <p className=" bg-red-600 relative left-">1</p>
-
-        <div className="flex gap-28 ml-28 mr-8">
-          <p>{}</p>
-          <p className="relative ">Time</p>
-          <p className="relative ">Carlos</p>
+    <div
+          key={recipe.recipe_id}
+          className="flex  justify-center items-center mt-5 mb-2 bg-gray-100 p-2 shadow-md"
+        >
+          <p className="relative left-7 text-2xl font-bold">{indx+1}</p>
+          <div className="flex gap-28 ml-24 mr-8 items-center">
+            <p className='ml-2'>{recipe.recipe_name}</p>
+            <p className="relative ">{recipe.preparing_time}</p>{" "}
+            {/* You can replace "Time" with the actual preparing time */}
+            <p className="relative ">{recipe.calories}</p>{" "}
+            {/* Replace "Carlos" with the actual calories */}
+          </div>
+          <button
+            className="btn bg-green-400 hover:bg-green-800 hover:text-white"
+            onClick={()=>{handelremove(recipe,recipe.recipe_id)}}
+          >
+            Preparing
+          </button>
         </div>
-        <button className="btn">Preparing</button>
-      </div>
-    </div>
-    </div>
   )
 }
 
