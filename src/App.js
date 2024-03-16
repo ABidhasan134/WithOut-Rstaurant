@@ -5,6 +5,8 @@ import BookMark from './components/BookMark';
 import CardList from './components/cardList';
 import HeadingText from './components/headingText';
 import Navbar from './components/Navbar';
+import {  ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [resipis, setResipis] = useState([]);
@@ -13,7 +15,7 @@ function App() {
   const heandleClick = (resipi, id) => {
     const found = resipis.some(recipe => recipe.recipe_id === id);
     if (found) {
-      alert("This recipe is already added.");
+      toast.error("This item is already added.");
     } else {
       const bookmarks = [...resipis, resipi];
       setResipis(bookmarks);
@@ -37,6 +39,7 @@ function App() {
       <Navbar />
       <Bannar />
       <HeadingText />
+      <ToastContainer />
       <div className='sm:flex  w-full  sm:gap-4 sm:mt-10'>
         <CardList heandleClick={heandleClick} className='border-2 border-green-600' />
         {/* Pass preperd as preperdItems */}

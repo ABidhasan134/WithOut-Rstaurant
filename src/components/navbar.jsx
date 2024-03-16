@@ -12,7 +12,7 @@ const Navbar = () => {
         {/* testing navbar */}
         <div className=" flex sm:gap-96 gap-24">
         <div className="navbar-center">
-          <a className="font-semibold p-1 sm:-4 hover:bg-green-300 rounded-md">
+          <a className="font-semibold p-1 sm:p-4 hover:bg-green-300 rounded-md">
             Home
           </a>
           <a className="font-semibold p-1 sm:p-4 hover:bg-green-300 rounded-md">
