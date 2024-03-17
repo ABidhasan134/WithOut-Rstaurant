@@ -3,7 +3,7 @@ import bgImg from "../img/bannarImg.jpg";
 const Bannar = () => {
   return (
     <div
-      className="hero min-h-[700px] sm:w-auto rounded-2xl w-[98%] p-2"
+      className="hero min-h-[700px] sm:w-auto rounded-2xl w-full p-2"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
       <div className="hero-content text-center text-neutral-content">

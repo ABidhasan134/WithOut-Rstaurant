@@ -44,11 +44,11 @@ const CardList = ({heandleClick}) => {
           <div className="flex justify-between mb-10">
             <div className="flex text-2xl items-center gap-3">
               <IoTimeOutline />
-              <p>{items.preparing_time}</p>
+              <p>{items.preparing_time}min</p>
             </div>
             <div className="flex text-2xl items-center gap-3">
               <TbBrandTinder />
-              <p>{items.calories}</p>
+              <p>{items.calories} calories</p>
             </div>
           </div>
   
