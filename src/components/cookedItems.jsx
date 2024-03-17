@@ -14,6 +14,7 @@ const CookedItems = ({ preperdItems }) => {
         <p className="relative sm:left-[65px] left-0">Carlos</p>
       </div>
       {preperdItems.map((item, index) => (
+        
         <div
           key={index}
           className="flex bg-green-100 shadow-md
@@ -29,7 +30,7 @@ const CookedItems = ({ preperdItems }) => {
           </div>
         </div>
       ))}
-      {/* <Total preperdItems ={preperdItems }/> */}
+      <Total preperdItems ={preperdItems }/>
     </div>
   );
 };

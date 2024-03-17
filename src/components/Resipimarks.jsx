@@ -12,7 +12,7 @@ const Resipimarks = ({handelremove,recipe,indx}) => {
             <p className='ml-2 text-wrap overflow-clip sm:w-auto w-[166px]'>{recipe.recipe_name}</p>
             <p className="relative ">{recipe.preparing_time} min</p>{" "}
             {/* You can replace "Time" with the actual preparing time */}
-            <p className="relative ">{recipe.calories} calories</p>{" "}
+            <p className="relative sm:pr-2 pr-0 sm:mr-4 mr-0">{recipe.calories} calories</p>{" "}
             {/* Replace "Carlos" with the actual calories */}
           </div>
           <button
